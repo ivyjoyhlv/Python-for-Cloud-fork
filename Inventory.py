@@ -24,6 +24,7 @@ class Inventory:
 
 # Student C: Write a test function
 def test_inventory_system():
+    
     inv = Inventory()
     
     # Create sample items
