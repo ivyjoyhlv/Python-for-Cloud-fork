@@ -8,7 +8,7 @@ class Item:
     def total_cost(self):
         return self.price * self.quantity
 
-# Student B: Define the Inventory class  representing the inventory system
+# Student B: Define the Inventory class representing the inventory system
 class Inventory:
     def __init__(self):
         self.items = []
@@ -26,18 +26,19 @@ class Inventory:
 def test_inventory_system():
     inv = Inventory()
     
-    # Create sample items
     item1 = Item("Butter Cookies", 50, 5)
     item2 = Item("Sweet Tarts", 100, 2)
     item3 =  Item("Chocolate Cookies", 68, 4)
     
-    # Add items to inventory
     inv.add_item(item1)
     inv.add_item(item2)
     inv.add_item(item3)
     
-    # Print total inventory value
     print("Total Inventory Value:", inv.total_value())
+    
+    inv.remove_item("Sweet Tarts")
+    
+    print("Total Inventory Value after removing Sweet Tarts:", inv.total_value())
 
 # Student D: Runs the inventory
 if __name__ == "__main__":
