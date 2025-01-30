@@ -24,13 +24,12 @@ class Inventory:
 
 # Student C: Write a test function
 def test_inventory_system():
-    
     inv = Inventory()
     
     # Create sample items
     item1 = Item("Butter Cookies", 50, 5)
     item2 = Item("Sweet Tarts", 100, 2)
-    item3 =  Item("Chocolate Cookies", 65, 4)
+    item3 =  Item("Chocolate Cookies", 68, 4)
     
     # Add items to inventory
     inv.add_item(item1)
